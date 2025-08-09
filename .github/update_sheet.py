@@ -15,7 +15,7 @@ creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
 gc = gspread.authorize(creds)
 
 # 你的 Google Sheet ID(網址中的 ID)
-SHEET_ID = "Y1ckF1e6kEr9d1KWB1e1IlwTb3wNWEnVKtozvUdBJcUI8"
+SHEET_ID = "1ckF1e6kEr9d1KWB1e1IlwTb3wNWEnVKtozvUdBJcUI8"
 worksheet = gc.open_by_key(SHEET_ID).sheet1
 
 # 寫入目前時間到下一行
